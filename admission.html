@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UNIVERSITY OF GAME DEVELOPMENT & ALGORITHM</title>
+	<meta name="viewport" content="width=device, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<label class="logo">
+		UGDA
+	</label>
+	<ul>
+		<li><a class="active" href="home.html">HOME</a></li>
+		<li><a class="active" href="about.html">ABOUT</a></li>
+		<li><a class="active" href="admission.html">ADMISSION</a></li>
+		<li><a class="active" href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	<center><form action="php-mysql.php" method="POST">
+	<table>
+		<tr><td>FIRST NAME :
+			<input type="text" name="fname" maxlength="10" placeholder="FIRST NAME" required>
+		</td></tr>
+		<br><tr><td>MIDDLE NAME :
+			<input type="text" name="mname" maxlength="10" placeholder="SECOND NAME" required>
+		</td></tr>
+		<br><tr><td>LAST NAME :
+			<input type="text" name="lname" maxlength="10" placeholder="LAST NAME" required>
+		</td></tr>
+		<br><tr><td>PHONE NUMBER :
+			<input type="text" name="phone_num" maxlength="10" required>
+		</td></tr>
+		<br><tr><td>DATE OF BIRTH :
+			<input type="date" name="dob" required>
+		</td></tr>
+		<br><tr><td>GENDER :
+			MALE	<input type="radio" name="gender" value="M" required>
+			FEMALE	<input type="radio" name="gender" value="F" required>
+			OTHER	<input type="radio" name="gender" value="O" required>
+		</td></tr>
+		<br><tr><td>ADDRESS :
+			<input type="text" name="address" maxlength="50" placeholder="address" required></td></tr>
+		<br><tr><td>COURSE :
+			<select name="course" size="1" required>
+				<option>CONCEPT ART & ILLUSTRATION</option>
+				<option>COMPUTER ANIMATION, VISUALS & 3D MODELLING</option>
+				<option>MOBILE DEVELOPMENT</option>
+		</td></tr>
+	</table>
+	<input type="submit"  name="submit" value="submit"><br>
+	<input type="reset" value="reset"></center>
+	</form>
+</body>
+</html>
