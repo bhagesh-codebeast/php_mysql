@@ -24,7 +24,18 @@ label.logo{
 	padding: 50px 50px;
 	font-weight: bold;
 	line-height: 80px;
+	position: relative;
+	animation-name: sassy;
+	animation-duration: 4s;
+	animation-delay: -2s;
 }
+@keyframes sassy {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
 sub{
 	font-size:10px;
 }
@@ -49,7 +60,7 @@ nav ul li a{
 
 a.active,a.hover{
 	background: #ffff1a;
-	transition: 0.7s;	
+	transition: 1.2s;	
 }
 h3,p{
 	text-align:left-justify;
@@ -57,6 +68,16 @@ h3,p{
 div{
 	display: block;
 	padding: 80px 200px 0px 200px;
+	position: relative;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-delay: -2s;
+}
+
+@keyframes example {
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
 }
 
 input,select{
@@ -65,4 +86,8 @@ input,select{
 
 table{
 	font-family: inherit;
+}
+.def{
+	font-size: 50px;
+	margin-top: 50px;
 }
